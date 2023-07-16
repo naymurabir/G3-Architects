@@ -416,7 +416,18 @@ header {
         height: 90%;
         margin-left: 0;
         padding: 0;
-
     }
+}
 
+/* Footer Styles */
+footer {
+    margin: 100px 0px;
+    background-color: #FFF4E7;
+    padding: 15px 170px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 12px;
+    color: var(--dark-02, #424242);
 }
