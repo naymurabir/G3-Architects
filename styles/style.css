@@ -1,0 +1,343 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    border: 1px solid yellow;
+    margin: 0 auto;
+    max-width: 1140px;
+}
+
+/* Header Section Styles*/
+header {
+    background: rgba(255, 144, 14, 0.10);
+    margin-bottom: 10px;
+
+}
+
+/* Navbar Section Styles */
+.navbar {
+    /* background-color: lightgoldenrodyellow; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 40px 120px; */
+    padding: 15px 170px;
+}
+
+.nav-title {
+    color: var(--dark-01, #131313);
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.nav-content ul {
+    display: flex;
+    align-items: center;
+}
+
+.nav-content ul .nav-item {
+    list-style: none;
+    margin-right: 20px;
+    color: var(--dark-02, #424242);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* Banner-Section Styles */
+.banner-content {
+    text-align: center;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.banner-title {
+    color: var(--dark-01, #131313);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.banner-description {
+    color: var(--dark-03, #727272);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    /* 162.5% */
+}
+
+.primary-btn {
+    background-color: #FF900E;
+    color: white;
+    font-size: 12px;
+    font-weight: 300;
+    padding: 10px 15px;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.banner-img {
+    width: 100%;
+    margin: auto;
+    /* padding: 20px 170px; */
+    border-radius: 5px;
+}
+
+.banner-image {
+    /* border: 5px solid red; */
+    width: 70%;
+    margin: auto;
+}
+
+/* Responsive Styles for Header & Nav */
+/* Small Devices */
+@media screen and (max-width:576px) {
+    .navbar {
+        padding: 10px;
+        flex-direction: column-reverse;
+        text-align: center;
+    }
+
+    .nav-title {
+        font-size: 30px;
+    }
+
+    .nav-content ul .nav-item {
+        font-size: 15px;
+        text-align: center;
+        margin-right: 30px;
+    }
+
+    .banner-title {
+        font-size: 15px;
+    }
+
+    .banner-description {
+        font-size: 12px;
+    }
+}
+
+/* For Medium or Tablet Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .navbar {
+        padding: 10px 50px;
+    }
+}
+
+/* ---------------------------------------------------------------------- */
+
+/* Teams Section Styles Start */
+.team-work-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 170px;
+    gap: 40px;
+}
+
+.team-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.team-img {
+    width: 200px;
+}
+
+
+.team-content-title {
+    color: var(--dark-03, #727272);
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.color-black {
+    color: black;
+    font-weight: bold;
+}
+
+.color-orange {
+    color: #FF900E;
+    font-weight: bold;
+}
+
+.team-content-description {
+    color: var(--dark-03, #727272);
+    font-size: 12px;
+    font-weight: 200;
+}
+
+/* Responsive Styles for Teams work section */
+/* For small/mobile devices */
+@media screen and (max-width:576px) {
+
+    .team-work-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 20px;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .team-img {
+        width: 300px;
+        margin: 0 auto;
+    }
+}
+
+/* For Medium or Tablet Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .team-work-container {
+        flex-direction: column-reverse;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .team-img-container {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 5px;
+    }
+
+    .team-img {
+        width: 350px;
+        margin: 0 auto;
+    }
+}
+
+/* Some Facts & Cards Section Styles Start */
+/*  Some Facts */
+.facts-content {
+    text-align: center;
+}
+
+.facts-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.facts-description {
+    font-size: 12px;
+    font-weight: 200;
+    margin-bottom: 40px;
+}
+
+/* Cards */
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 170px;
+    /* margin: 0 150px; */
+}
+
+.cards-item {
+    height: 120px;
+    width: 120px;
+    border: 1px solid orange;
+    border-radius: 4px;
+    text-align: center;
+    padding: 20px;
+}
+
+.cards-logo {
+    width: 30px;
+}
+
+.cards-number {
+    font-size: 25px;
+}
+
+.cards-msg {
+    font-size: 12px;
+}
+
+/* Responsive Styles for Some Facts & Cards Section */
+/* For small devices */
+@media screen and (max-width:576px) {
+    .cards-container {
+        flex-direction: column;
+    }
+
+    .cards-item {
+        margin-bottom: 10px;
+        width: 300px;
+    }
+}
+
+/* For Medium Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .cards-container {
+        padding: 20px;
+        /* gap: 20px; */
+    }
+}
+
+/* Our Sponsors Sections Styles Start */
+.sponsors-content {
+    text-align: center;
+}
+
+.sponsors-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.sponsors-description {
+    font-size: 12px;
+    font-weight: 200;
+}
+
+.sponsors-logo {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px 170px;
+    /* margin-left: 25px; */
+}
+
+.sponsors-logo-item {
+    width: 100%
+}
+
+.sponsors-logo img {
+    width: 50%;
+}
+
+/* Responsive Styles for Sponsors section */
+/* Small devices */
+@media screen and (max-width:576px) {
+    .sponsors-logo {
+        flex-direction: column;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .sponsors-logo img {
+        width: 40%;
+        margin-bottom: 15px;
+    }
+}
+
+/* For Medium Devices */
+@media screen and (min-width:576px) and (max-width:992px) {
+    .sponsors-logo {
+        padding: 10px 30px;
+        margin-left: 25px;
+    }
+
+    .sponsors-logo img {
+        width: 60%;
+    }
+}
+
+/* Features Section styles start */
+.features-title {
+    color: #424242;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.features-description {
+    color: #727272;
+    font-size: 12px;
+    font-weight: 200;
+}
